@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - Two-Tier App{% endblock %}
+{% block content %}
+<div class="row">
+  <div class="col-md-12">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h4>Welcome, {{ user.username }}!</h4>
+        <p>Your email: {{ user.email }}</p>
+        <p>This is a protected dashboard page.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
